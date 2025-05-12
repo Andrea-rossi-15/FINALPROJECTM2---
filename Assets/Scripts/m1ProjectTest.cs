@@ -13,14 +13,14 @@ public class m1ProjectTest : MonoBehaviour
     {
 
     }
-
+    public Hero firstAttacker;
+    public Hero secondAttacker;
     // Update is called once per frame
     void Update()
     {
         if (!Hero_a.IsAlive() || !Hero_b.IsAlive()) { return; }
 
-        Hero firstAttacker;
-        Hero secondAttacker;
+
 
         if (Hero_a.GetBaseStats().spd > Hero_b.GetBaseStats().spd)
         {
@@ -39,14 +39,15 @@ public class m1ProjectTest : MonoBehaviour
         {
             Attack(secondAttacker, firstAttacker);
         }
-        Debug.Log(firstAttacker);
+
     }
 
     public void Attack(Hero attacker, Hero defender)
     {
+        Debug.Log(firstAttacker.Getname() + " Is attacking");
 
 
-        if (GameFormulas.HasHit(attacker.GetBaseStats(), defender.GetBaseStats()))
+        if (GameFormulas.HasHit(attacker.GetBaseStats(), defender.GetBaseStats()) == false)
         {
             if (GameFormulas.HasElementAdvantage(attacker.GetWeapone().GetElem(), defender))
             {
@@ -59,11 +60,11 @@ public class m1ProjectTest : MonoBehaviour
 
             int damage = GameFormulas.CalculateDamage(attacker, defender);
             defender.TakeDamage(damage);
-            Debug.Log($"{attacker.Getname()} has hit {damage} of damage");
+            Debug.Log(attacker.Getname() + " has take " + damage + " point of damage");
 
             if (!defender.IsAlive())
             {
-                Debug.Log($"{attacker.Getname()} has won!");
+                Debug.Log(attacker.Getname() + " is the winner");
             }
         }
     }

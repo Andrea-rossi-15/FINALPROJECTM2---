@@ -341,9 +341,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1152413143}
-  - component: {fileID: 1152413142}
-  - component: {fileID: 1152413140}
-  - component: {fileID: 1152413145}
   - component: {fileID: 1152413144}
   m_Layer: 0
   m_Name: GameObject
@@ -352,30 +349,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1152413140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152413139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 751ca67f9f3ae4e74bdc5aebdf84d656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1152413142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152413139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c97f6b24a590b4d68889823f04573b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1152413143
 Transform:
   m_ObjectHideFlags: 0
@@ -400,21 +373,109 @@ MonoBehaviour:
   m_GameObject: {fileID: 1152413139}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 120fb6753d9224433b2abf83098d0b54, type: 3}
+  m_Script: {fileID: 11500000, guid: c220336882bcd48ee96215ac277b383d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1152413145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152413139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83ec3c93216f3440b81c8f67a907d789, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  Hero_a:
+    name: Tony
+    hp: 20
+    baseStats:
+      atk: 10
+      def: 5
+      res: 12
+      spd: 10
+      crt: 5
+      aim: 2
+      eva: 50
+    resistance: 1
+    weakness: 2
+    weapone:
+      Name: Meny
+      dmgType: 1
+      elem: 1
+      bonusStats:
+        atk: 9
+        def: 7
+        res: 5
+        spd: 8
+        crt: 9
+        aim: 4
+        eva: 0
+  Hero_b:
+    name: Meny
+    hp: 15
+    baseStats:
+      atk: 9
+      def: 4
+      res: 8
+      spd: 5
+      crt: 9
+      aim: 9
+      eva: 9
+    resistance: 1
+    weakness: 1
+    weapone:
+      Name: fallo
+      dmgType: 0
+      elem: 2
+      bonusStats:
+        atk: 9
+        def: 7
+        res: 9
+        spd: 9
+        crt: 5
+        aim: 7
+        eva: 9
+  firstAttacker:
+    name: 
+    hp: 0
+    baseStats:
+      atk: 0
+      def: 0
+      res: 0
+      spd: 0
+      crt: 0
+      aim: 0
+      eva: 0
+    resistance: 0
+    weakness: 0
+    weapone:
+      Name: 
+      dmgType: 0
+      elem: 0
+      bonusStats:
+        atk: 0
+        def: 0
+        res: 0
+        spd: 0
+        crt: 0
+        aim: 0
+        eva: 0
+  secondAttacker:
+    name: 
+    hp: 0
+    baseStats:
+      atk: 0
+      def: 0
+      res: 0
+      spd: 0
+      crt: 0
+      aim: 0
+      eva: 0
+    resistance: 0
+    weakness: 0
+    weapone:
+      Name: 
+      dmgType: 0
+      elem: 0
+      bonusStats:
+        atk: 0
+        def: 0
+        res: 0
+        spd: 0
+        crt: 0
+        aim: 0
+        eva: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
