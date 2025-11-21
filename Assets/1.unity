@@ -378,7 +378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hero_a:
     name: Tony
-    hp: 20
+    hp: 200
     baseStats:
       atk: 10
       def: 5
@@ -403,7 +403,7 @@ MonoBehaviour:
         eva: 0
   Hero_b:
     name: Meny
-    hp: 15
+    hp: 150
     baseStats:
       atk: 9
       def: 4
